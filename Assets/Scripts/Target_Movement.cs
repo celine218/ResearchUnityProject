@@ -5,12 +5,18 @@ using UnityEngine;
 public class Target_Movement : MonoBehaviour
 {
     // Start is called before the first frame update
-    private readonly Rigidbody rb;
+    private Rigidbody rb;
     void start()
     {
-        gameObject.GetComponent<Rigidbody>().AddForce(0, 0, 1);
+       
     }
-
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.name == "redsquare")
+        {
+            Destroy(col.gameObject);
+        }
+    }
     // Update is called once per frame
-    
+
 }

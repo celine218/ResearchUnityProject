@@ -11,7 +11,7 @@ public class TemplateMovement : MonoBehaviour
 
     [SerializeField]
     private LayerMask allTilesLayer;
-    private readonly Rigidbody rb;
+    private Rigidbody rb;
     void start()
     {
         gameObject.GetComponent<Rigidbody>().AddForce(0, 0, 1);
@@ -34,7 +34,7 @@ public class TemplateMovement : MonoBehaviour
     {
         if (col.gameObject.name == "BlueSquare")
         {
-            Destroy(col.gameObject);
+            Debug.Log("butt touch");
         }
     }
 }
