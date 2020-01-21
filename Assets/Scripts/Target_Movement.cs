@@ -14,7 +14,7 @@ public class Target_Movement : MonoBehaviour
     {
         if (col.gameObject.name == "redsquare")
         {
-            ///
+            Destroy(col.gameObject);
         }
     }
     // Update is called once per frame
