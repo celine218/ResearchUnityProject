@@ -34,7 +34,7 @@ public class TemplateMovement : MonoBehaviour
     {
         if (col.gameObject.name == "BlueSquare")
         {
-            Debug.Log("butt touch");
+            Debug.Log("Collision");
         }
     }
 }
